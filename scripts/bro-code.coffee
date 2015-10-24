@@ -177,6 +177,6 @@ quotes = [
 ]
 
 module.exports = (robot) ->
-  robot.hear /.*(bro code|bc|brocode).*/i, (msg) ->
+  robot.hear /.*(bro code|bc|brocode|bro|code).*/i, (msg) ->
     msg.send "Bro Code " + msg.random quotes
 
