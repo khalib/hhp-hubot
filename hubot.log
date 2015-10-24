@@ -1,0 +1,85 @@
+[Sat Oct 24 2015 09:02:46 GMT-0700 (PDT)] DEBUG Loading adapter slack
+[Sat Oct 24 2015 09:02:46 GMT-0700 (PDT)] INFO Connecting...
+[Sat Oct 24 2015 09:02:46 GMT-0700 (PDT)] ERROR Error: listen EADDRINUSE
+  at exports._errnoException (util.js:746:11)
+  at Server._listen2 (net.js:1156:14)
+  at listen (net.js:1182:10)
+  at net.js:1280:9
+  at dns.js:85:18
+  at process._tickCallback (node.js:355:11)
+
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] INFO Logged in as swarley of Happy Hall Peeps, but not yet connected
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] INFO Slack client now connected
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] DEBUG Loading scripts from /Users/caleb/Drive/Development/hubot/swarley/scripts
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/scripts/example.coffee
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] DEBUG Loading scripts from /Users/caleb/Drive/Development/hubot/swarley/src/scripts
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] DEBUG Loading hubot-scripts from /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-scripts/src/scripts
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-scripts/src/scripts/advice.coffee
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] DEBUG Loading external-scripts from npm packages
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-diagnostics/src/diagnostics.coffee
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-help/src/help.coffee
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] ERROR hubot-heroku-alive included, but missing HUBOT_HEROKU_KEEPALIVE_URL. `heroku config:set HUBOT_HEROKU_KEEPALIVE_URL=$(heroku apps:info -s  | grep web_url | cut -d= -f2)`
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-heroku-keepalive/src/heroku-keepalive.coffee
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-google-images/src/google-images.coffee
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-google-translate/src/google-translate.coffee
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-pugme/src/pugme.coffee
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-maps/src/maps.coffee
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] INFO hubot-redis-brain: Using default redis on localhost:6379
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-redis-brain/src/redis-brain.coffee
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-rules/src/rules.coffee
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-shipit/src/shipit.coffee
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] DEBUG hubot-redis-brain: Successfully connected to Redis
+[Sat Oct 24 2015 09:02:47 GMT-0700 (PDT)] INFO hubot-redis-brain: Data for hubot brain retrieved from Redis
+[Sat Oct 24 2015 09:03:46 GMT-0700 (PDT)] DEBUG Received message: 'swarly image me bananas' in channel: caleb, from: caleb
+[Sat Oct 24 2015 09:03:46 GMT-0700 (PDT)] DEBUG No listeners executed; falling back to catch-all
+[Sat Oct 24 2015 09:03:58 GMT-0700 (PDT)] DEBUG Received message: '@swarley: image me bananas' in channel: caleb, from: caleb
+[Sat Oct 24 2015 09:03:58 GMT-0700 (PDT)] DEBUG No listeners executed; falling back to catch-all
+[Sat Oct 24 2015 09:04:15 GMT-0700 (PDT)] DEBUG Received message: '@swarley image me bananas' in channel: caleb, from: caleb
+[Sat Oct 24 2015 09:04:15 GMT-0700 (PDT)] DEBUG No listeners executed; falling back to catch-all
+[Sat Oct 24 2015 09:04:25 GMT-0700 (PDT)] DEBUG Received message: 'swarley image me bananas' in channel: general, from: caleb
+[Sat Oct 24 2015 09:04:25 GMT-0700 (PDT)] DEBUG Message 'swarley image me bananas' matched regex //^\s*[@]?swarley[:,]?\s*(?:(image|img)( me)? (.*))/i/
+[Sat Oct 24 2015 09:04:25 GMT-0700 (PDT)] DEBUG Executing listener callback for Message 'swarley image me bananas'
+[Sat Oct 24 2015 09:04:26 GMT-0700 (PDT)] DEBUG Sending to general: http://www.esbtrib.com/wp-content/uploads/2015/09/bananas1.jpeg
+[Sat Oct 24 2015 09:04:29 GMT-0700 (PDT)] DEBUG Received raw message (subtype: message_changed)
+[Sat Oct 24 2015 09:04:29 GMT-0700 (PDT)] DEBUG No listeners executed; falling back to catch-all
+[Sat Oct 24 2015 09:04:41 GMT-0700 (PDT)] DEBUG Received message: '@swarley: image me swarley' in channel: general, from: caleb
+[Sat Oct 24 2015 09:04:41 GMT-0700 (PDT)] DEBUG Message '@swarley: image me swarley' matched regex //^\s*[@]?swarley[:,]?\s*(?:(image|img)( me)? (.*))/i/
+[Sat Oct 24 2015 09:04:41 GMT-0700 (PDT)] DEBUG Executing listener callback for Message '@swarley: image me swarley'
+[Sat Oct 24 2015 09:04:41 GMT-0700 (PDT)] DEBUG Sending to general: https://s-media-cache-ak0.pinimg.com/736x/f9/41/bf/f941bfa229a633e0a288923618e0e39a.jpg
+[Sat Oct 24 2015 09:04:42 GMT-0700 (PDT)] DEBUG Received raw message (subtype: message_changed)
+[Sat Oct 24 2015 09:04:42 GMT-0700 (PDT)] DEBUG No listeners executed; falling back to catch-all
+[Sat Oct 24 2015 09:05:12 GMT-0700 (PDT)] DEBUG Received message: '@swarley: gif me yay' in channel: general, from: caleb
+[Sat Oct 24 2015 09:05:12 GMT-0700 (PDT)] DEBUG No listeners executed; falling back to catch-all
+[Sat Oct 24 2015 09:07:43 GMT-0700 (PDT)] DEBUG Received message: '@swarley: image me HIMYM' in channel: random, from: caleb
+[Sat Oct 24 2015 09:07:43 GMT-0700 (PDT)] DEBUG Message '@swarley: image me HIMYM' matched regex //^\s*[@]?swarley[:,]?\s*(?:(image|img)( me)? (.*))/i/
+[Sat Oct 24 2015 09:07:43 GMT-0700 (PDT)] DEBUG Executing listener callback for Message '@swarley: image me HIMYM'
+[Sat Oct 24 2015 09:07:44 GMT-0700 (PDT)] DEBUG Sending to random: http://tv.blogs.pressdemocrat.com/files/2014/03/HIMYM.jpg
+[Sat Oct 24 2015 09:07:45 GMT-0700 (PDT)] DEBUG Received raw message (subtype: message_changed)
+[Sat Oct 24 2015 09:07:45 GMT-0700 (PDT)] DEBUG No listeners executed; falling back to catch-all
+[Sat Oct 24 2015 09:09:17 GMT-0700 (PDT)] ERROR Last pong is too old: 14.929
+[Sat Oct 24 2015 09:09:17 GMT-0700 (PDT)] INFO Reconnecting in 1000ms
+[Sat Oct 24 2015 09:09:18 GMT-0700 (PDT)] INFO Attempting reconnect
+[Sat Oct 24 2015 09:09:18 GMT-0700 (PDT)] INFO Connecting...
+[Sat Oct 24 2015 09:09:23 GMT-0700 (PDT)] INFO Logged in as swarley of Happy Hall Peeps, but not yet connected
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] INFO Slack client now connected
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] DEBUG Loading scripts from /Users/caleb/Drive/Development/hubot/swarley/scripts
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/scripts/example.coffee
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] DEBUG Loading scripts from /Users/caleb/Drive/Development/hubot/swarley/src/scripts
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] DEBUG Loading hubot-scripts from /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-scripts/src/scripts
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-scripts/src/scripts/advice.coffee
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] DEBUG Loading external-scripts from npm packages
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-diagnostics/src/diagnostics.coffee
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-help/src/help.coffee
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] ERROR hubot-heroku-alive included, but missing HUBOT_HEROKU_KEEPALIVE_URL. `heroku config:set HUBOT_HEROKU_KEEPALIVE_URL=$(heroku apps:info -s  | grep web_url | cut -d= -f2)`
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-heroku-keepalive/src/heroku-keepalive.coffee
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-google-images/src/google-images.coffee
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-google-translate/src/google-translate.coffee
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-pugme/src/pugme.coffee
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-maps/src/maps.coffee
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] INFO hubot-redis-brain: Using default redis on localhost:6379
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-redis-brain/src/redis-brain.coffee
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-rules/src/rules.coffee
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] DEBUG Parsing help for /Users/caleb/Drive/Development/hubot/swarley/node_modules/hubot-shipit/src/shipit.coffee
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] DEBUG hubot-redis-brain: Successfully connected to Redis
+[Sat Oct 24 2015 09:09:24 GMT-0700 (PDT)] INFO hubot-redis-brain: Data for hubot brain retrieved from Redis
+[Sat Oct 24 2015 09:09:26 GMT-0700 (PDT)] INFO Slack client closed, waiting for reconnect
