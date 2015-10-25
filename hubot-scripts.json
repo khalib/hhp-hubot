@@ -1,6 +1,5 @@
 [
   "9gag.coffee",
-  "gif-me.coffee",
   "f-ing-weather.coffee",
   "ackbar.coffee",
   "adult.coffee",
@@ -14,5 +13,6 @@
   "fml.coffee",
   "gob.coffee",
   "news.coffee",
-  "yoda-quotes.coffee"
+  "yoda-quotes.coffee",
+  "giphy.coffee"
 ]
