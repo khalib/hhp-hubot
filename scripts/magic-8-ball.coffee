@@ -14,30 +14,30 @@
 #   khalib540
 
 responses = [
-  "It is certain"
-  "It is decidedly so"
-  "Without a doubt"
-  "Yes, definitely"
-  "You may rely on it"
-  "As I see it, yes"
-  "Most likely"
-  "Outlook good"
-  "Yes"
-  "Signs point to yes"
-  "Reply hazy try again"
-  "Ask again later"
-  "Better not tell you now"
-  "Cannot predict now"
-  "Concentrate and ask again"
-  "Don't count on it"
-  "My reply is no"
-  "My sources say no"
-  "Outlook not so good"
-  "Very doubtful"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/1.gif"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/2.gif"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/3.gif"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/4.gif"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/5.gif"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/6.gif"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/7.gif"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/8.gif"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/9.gif"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/10.gif"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/11.gif"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/12.gif"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/13.gif"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/14.gif"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/15.gif"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/16.gif"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/17.gif"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/18.gif"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/19.gif"
+  "https://s3.amazonaws.com/khalib-hubot/magic-8-ball/20.gif"
 ]
 
 module.exports = (robot) ->
   robot.hear /.*(magic 8 ball|m8b).*/i, (msg) ->
     msg.send "Shaking the 8 ball..."
-    setTimeout ( -> msg.send (":8ball: " + msg.random responses) ), 2000
+    setTimeout ( -> msg.send msg.random responses ), 2000
 
