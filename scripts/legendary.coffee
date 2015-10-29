@@ -15,6 +15,5 @@
 
 module.exports = (robot) ->
   robot.hear /.*(awesome|great|!!!|w00t|z00t|legendary|yay|legend|fantastic).*/i, (msg) ->
-    msg.send "It's going to be legend... "
-    setTimeout ( -> msg.send "wait for it... ", setTimeout ( -> msg.send "DARY!!!!"), 2000), 2000
+    setTimeout ( -> msg.send "It's going to be legend...", setTimeout ( -> msg.send "wait for it...", setTimeout ( -> msg.send "DARY!!!!"), 2000), 2000), 2000
 
